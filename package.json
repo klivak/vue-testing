@@ -5,7 +5,8 @@
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
-    "lint": "vue-cli-service lint"
+    "lint": "vue-cli-service lint",
+    "jest": "jest --no-cache"
   },
   "dependencies": {
     "vue": "^2.6.6",
@@ -20,6 +21,7 @@
     "eslint": "^5.8.0",
     "eslint-plugin-vue": "^5.0.0",
     "fibers": "^3.1.1",
+    "jest": "^24.5.0",
     "sass": "^1.17.2",
     "sass-loader": "^7.1.0",
     "vue-template-compiler": "^2.5.21"
