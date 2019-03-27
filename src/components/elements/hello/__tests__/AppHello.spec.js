@@ -1,17 +1,16 @@
 /* eslint-disable */
 
-
 import {mount} from '@vue/test-utils'
-import Component from './Component'
+import AppHello from '../AppHello'
 
-describe('test', () => {
-    it('works', () => {
+describe('AppHello', () => {
+    it('renders out the hello text', () => {
 
         let wrapper = mount(Component);
 
         // console.log(wrapper.html());
 
         // expect(true).toBe(true)
-        expect(wrapper.html()).toContain('Hello Vue');
+        expect(wrapper.html()).toContain('Hello');
     })
 });
