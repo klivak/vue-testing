@@ -6,7 +6,7 @@ import AppHello from '../AppHello'
 describe('AppHello', () => {
     it('renders out the hello text', () => {
 
-        let wrapper = mount(Component);
+        let wrapper = mount(AppHello);
 
         // console.log(wrapper.html());
 
