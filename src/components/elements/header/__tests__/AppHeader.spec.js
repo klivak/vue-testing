@@ -1,4 +1,5 @@
 /* eslint-disable */
+// check component props
 
 import { mount } from '@vue/test-utils'
 import AppHeader from '../AppHeader'

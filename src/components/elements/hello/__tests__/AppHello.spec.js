@@ -1,4 +1,5 @@
 /* eslint-disable */
+// check component text
 
 import {mount} from '@vue/test-utils'
 import AppHello from '../AppHello'

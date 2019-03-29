@@ -1,4 +1,5 @@
 /* eslint-disable */
+// check class existing
 
 import {mount} from '@vue/test-utils'
 import AppTag from '../AppTag'
