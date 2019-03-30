@@ -1,11 +1,11 @@
 <template>
     <div>
-        <AppTag text="Vue" dark></AppTag>
+        <AppTag text="Vue" />
     </div>
 </template>
 
 <script>
-    import AppTag from '../components/elements/tag/AppTag';
+    import AppTag from '@/components/elements/tag/AppTag'
 
     export default {
         components: {

@@ -1,29 +1,22 @@
 {
   "env": {
     "development": {
-      "presets": [
-        "@vue/app"
-      ]
+        "presets": [
+            "@vue/app"
+        ]
     },
     "production": {
-      "presets": [
-        "@vue/app"
-      ]
+        "presets": [
+            "@vue/app"
+        ]
     },
     "test": {
-      "presets": [
-        [
-          "env",
-          {
-            "targets": {
-              "node": "current"
-            }
-          }
+        "presets": [
+            ["env", { "targets": { "node": "current" }}]
+        ],
+        "plugins": [
+            "transform-object-rest-spread"
         ]
-      ],
-      "plugins": [
-        "transform-object-rest-spread"
-      ]
     }
   }
 }
