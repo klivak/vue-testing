@@ -1,10 +1,12 @@
-import { mount } from '@vue/test-utils'
+// i can see some text
+
+import {mount} from '@vue/test-utils'
 import AppHello from '../AppHello'
 
 describe('AppHello', () => {
     it('renders out the hello text', () => {
-        let wrapper = mount(AppHello)
+        let wrapper = mount(AppHello);
 
         expect(wrapper.html()).toContain('Hello')
     })
-})
+});

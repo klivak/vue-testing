@@ -1,3 +1,5 @@
+// a class should be visible
+
 import { mount } from '@vue/test-utils'
 import AppTag from '../AppTag'
 
