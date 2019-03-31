@@ -1,15 +1,17 @@
 <template>
     <div>
-        <AppReveal text="Vue"/>
+        <AppList>
+            <li>Item one</li>
+        </AppList>
     </div>
 </template>
 
 <script>
-    import AppReveal from '@/components/elements/reveal/AppReveal'
+    import AppList from '@/components/elements/list/AppList'
 
     export default {
         components: {
-            AppReveal
+            AppList
         }
     }
 </script>
