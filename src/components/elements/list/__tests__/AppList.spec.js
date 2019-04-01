@@ -1,17 +1,27 @@
 // slot content should be rendered
 
-import {mount} from '@vue/test-utils'
+import { mount } from '@vue/test-utils'
 import AppList from '../AppList'
+import AppHeader from '../../header/AppHeader'
 
 describe('AppList', () => {
     it('renders content within the default slot', () => {
+        let headerWrapper = {
+            render (h) {
+                return h (AppHeader, {
+                    props: {
+                        text: 'Home'
+                    }
+                })
+            }
+        };
+
         let wrapper = mount(AppList, {
             slots: {
-                items: 'Content'
+                default: 'Content'
             }
         });
 
-        expect(wrapper.html()).toContain('Content');
-
+        expect(wrapper.html()).toContain('Content')
     })
 });
