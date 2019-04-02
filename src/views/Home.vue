@@ -1,17 +1,20 @@
 <template>
     <div>
-        <AppList>
-            <li>Item one</li>
-        </AppList>
+        <AppFormInput v-model="body"></AppFormInput>
     </div>
 </template>
 
 <script>
-    import AppList from '@/components/elements/list/AppList'
+    import AppFormInput from '@/components/elements/form/AppFormInput'
 
     export default {
+        data() {
+            return {
+                body: ''
+            }
+        },
         components: {
-            AppList
+            AppFormInput
         }
     }
 </script>
